@@ -193,7 +193,8 @@ local Update = function(self)
 
 			local r, g, b = GetItemQualityColor(battlePetRarity or itemRarity)
 			local ItemLevel = Cache_ItemLevel[self] or Cache_GetItemLevel(self)
-			ItemLevel:SetTextColor(r, g, b)
+			--ItemLevel:SetTextColor(r, g, b)
+			ItemLevel:SetTextColor(0, 255, 255)
 			ItemLevel:SetText(scannedLevel or battlePetLevel or effectiveLevel or itemLevel or "")
 
 		else
